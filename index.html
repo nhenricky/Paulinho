@@ -28,7 +28,7 @@ body{
     display:flex;
     flex-direction:column;
     align-items:center;
-    justify-content:center;
+    padding:40px 20px;
 }
 
 h1{
@@ -38,7 +38,7 @@ h1{
 
 h2{
     font-size:32px;
-    margin-bottom:30px;
+    margin-bottom:40px;
 }
 
 /* botão */
@@ -55,17 +55,17 @@ h2{
 /* galeria */
 .gallery{
     display:flex;
-    gap:20px;
-    flex-wrap:wrap;
-    justify-content:center;
+    flex-direction:column;
+    gap:25px;
+    align-items:center;
 }
 
-/* imagens do mesmo tamanho */
+/* imagens */
 .gallery img{
-    width:200px;
-    height:200px;
-    object-fit:cover;
-    border-radius:10px;
+    width:90%;
+    max-width:400px;
+    height:auto;
+    border-radius:12px;
 }
 
 /* controle de páginas */
@@ -81,7 +81,7 @@ h2{
     display:none;
 }
 
-/* RESPONSIVO PARA CELULAR */
+/* RESPONSIVO */
 @media (max-width:600px){
 
     h1{
@@ -90,16 +90,6 @@ h2{
 
     h2{
         font-size:24px;
-    }
-
-    .gallery{
-        flex-direction:column;
-        align-items:center;
-    }
-
-    .gallery img{
-        width:90%;
-        height:auto;
     }
 
 }
