@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday</title>
+
+<style>
+
+body{
+    margin:0;
+    background:#0f0f0f;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* centralização */
+.center{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+/* página de fotos */
+.center-column{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+h1{
+    font-size:50px;
+    text-align:center;
+}
+
+h2{
+    font-size:32px;
+    margin-bottom:30px;
+}
+
+/* botão */
+.btn{
+    margin-top:30px;
+    padding:12px 25px;
+    background:#ff4d6d;
+    color:white;
+    border-radius:8px;
+    font-size:18px;
+    text-decoration:none;
+}
+
+/* galeria */
+.gallery{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+/* imagens do mesmo tamanho */
+.gallery img{
+    width:200px;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+/* controle de páginas */
+#photos{
+    display:none;
+}
+
+#photos:target{
+    display:flex;
+}
+
+#photos:target ~ #home{
+    display:none;
+}
+
+/* RESPONSIVO PARA CELULAR */
+@media (max-width:600px){
+
+    h1{
+        font-size:32px;
+    }
+
+    h2{
+        font-size:24px;
+    }
+
+    .gallery{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .gallery img{
+        width:90%;
+        height:auto;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Página inicial -->
+<div id="home" class="center">
+
+<h1>Happy Birthday To Us ❤️❤️</h1>
+
+<a href="#photos" class="btn">Page</a>
+
+</div>
+
+
+<!-- Página das fotos -->
+<div id="photos" class="center-column">
+
+<h2>Our Photos ❤️</h2>
+
+<div class="gallery">
+
+<img src="foto1.jpg">
+<img src="foto5.jpg">
+<img src="foto6.jpg">
+<img src="foto2.jpg">
+<img src="foto3.jpg">
+<img src="foto4.jpg">
+<img src="foto7.jpg">
+
+</div>
+
+</div>
+
+</body>
+</html>
